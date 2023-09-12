@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국민은행 이체 컨버터</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1 style="color: red; text-align: center;">국민은행 이체 컨버터</h1>
+    <form method="post" enctype="multipart/form-data" action="/process/csv"> 
+        <table>
+            <tr>
+                <td><label>CSV 파일 업로드</label></td>
+                <td><input type="file" name="csv"></td>
+            </tr>
+        </table>
+        <input type="submit" value="변환 및 다운로드" name="submit">
+    </form>
+</body>
+</html>
